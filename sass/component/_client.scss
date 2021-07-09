@@ -1,0 +1,32 @@
+.client {
+  display: flex;
+}
+
+.client__card {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icons-color);
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
+  &:hover .client__client-icon,
+  &:focus .client__client-icon {
+    fill: var(--accent-color);
+  }
+}
+
+.client__client-icon {
+  width: 106px;
+  height: 60px;
+  fill: var(--icons-color);
+}
