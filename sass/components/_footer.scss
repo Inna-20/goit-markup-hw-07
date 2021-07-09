@@ -1,0 +1,104 @@
+.address-conteiner .conteiner {
+  display: flex;
+  padding-top: 60px;
+  align-items: baseline;
+  padding-bottom: 60px;
+}
+
+.adress-list .adress {
+  margin-bottom: 9px;
+}
+.adress-list .contact {
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+.adress {
+  color: var(--white-color);
+  font-size: 14px;
+  line-height: 1.71;
+}
+.contact {
+  color: var(--white-op);
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+}
+.adress-list {
+  font-style: normal;
+}
+.adress-list .contact {
+  margin-top: 0;
+  margin-bottom: 9px;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.address-conteiner {
+  background-color: var(--dark-font-color);
+}
+
+.footer-conteiner {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.accede {
+  display: block;
+  margin-left: 70px;
+  list-style: none;
+}
+.accede h3 {
+  margin-top: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.icons-list-footer {
+  margin: 0 auto;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.icons-list-footer li {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.icons-list-footer li {
+  fill: var(--icons-color);
+  background-color: var(--footer-icons-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+  &:hover .icon-footer,
+  &:focus .icon-footer {
+    fill: var(--white-color);
+    background-color: var(--accent-color);
+  }
+}
+
+.icon-footer {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+
+  @extend %list-align;
+  justify-content: center;
+
+  fill: var(--white-color);
+}

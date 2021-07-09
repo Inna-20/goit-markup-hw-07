@@ -1,0 +1,31 @@
+.client {
+  display: flex;
+}
+
+.client li {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icons-color);
+  border-radius: 4px;
+
+  @extend %list-align;
+  justify-content: center;
+  cursor: pointer;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
+  &:hover .client-icon,
+  &:focus .client-icon {
+    fill: var(--accent-color);
+  }
+}
+
+.client-icon {
+  width: 106px;
+  height: 60px;
+  fill: var(--icons-color);
+}
